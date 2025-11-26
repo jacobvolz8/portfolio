@@ -1,0 +1,78 @@
+
+.image-container {
+  z-index: 0;
+  width: 360px;
+  height: 548px;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 20%;
+  bottom: 8%;
+  left: auto;
+  margin: auto;
+}
+
+.profile-pic {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  opacity: 0;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 45px;
+  transition: border-radius 0.5s ease;
+}
+
+.image-container:hover .profile-pic {
+  border-radius: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .image-container {
+    position: static;          
+    width: 70%;
+    max-width: 280px;
+    height: auto;
+    margin: 0 auto 40px;    
+  }
+
+  .profile-pic {
+    position: static;
+    width: 100%;
+    height: auto;
+    opacity: 1;              
+    display: block;
+    
+
+    
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1150px) {
+
+  .flat-button {
+    float: none;          
+    display: inline-block;
+    margin: 25px auto 0;        
+  }
+  .image-container {
+    position: static;
+    width: 300px;
+    height: auto;
+    margin: 30 auto 40px;
+  }
+
+  .profile-pic {
+    width: 100%;
+    height: auto;
+    position: static;
+    //margin-left: -180px;
+    margin-bottom: 0 auto;
+  }
+}

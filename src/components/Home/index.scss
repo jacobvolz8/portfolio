@@ -1,0 +1,158 @@
+.container.home-page{
+
+    .text-zone{
+        position: absolute;
+        left: 10%; 
+        top: 40%;
+        transform: translateY( -50%);
+        width: 40%;
+        max-height: 90%;
+    }
+
+    h1 {
+        color: #ece7e7;
+        font-size: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+        line-height: 0.01; 
+
+        
+        img{
+            width: 150px;
+            margin-left: 3px;
+            margin-right: 3px;
+            vertical-align: middle;
+            display: inline-block;
+            opacity: 0;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+        }
+    }
+}
+
+h2 {
+    color: #ece7e7;
+    margin-top: -15px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: sans-serif;
+    letter-spacing: 3px;
+    animation: fadeIn 1s 1.8s backwards;
+
+}
+
+.flat-button{
+    color: #3AC5FC;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #3AC5FC;
+    margin-top: 35px;
+    float:left ;
+    animation: fadeIn 1s 1.8s backwards;
+    white-space: nowrap;
+
+    &:hover{
+        background: #3AC5FC;
+        color: rgb(255, 248, 248);
+    }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .container.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //margin-left: 70px;
+    //width: calc(100% - 70px);
+    padding: 80px 120px 40px 10px;
+    box-sizing: border-box;
+    
+  }
+
+  .container.home-page .text-zone {
+    position: static;         
+    transform: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    padding-right: 20px;
+    margin-bottom: 40px;
+    
+  }
+
+  .container.home-page h1 {
+    font-size: 32px;
+    line-height: 1.1;
+    
+  }
+
+  .container.home-page h1 img {
+    width: 80px;
+    margin: 0 0 0 8px;
+  }
+
+  .container.home-page h2 {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: auto;
+    letter-spacing: 2px;
+    white-space: normal;
+  }
+
+  .flat-button {
+    float: none;
+    display: inline-block;
+    margin-top: 20px;
+  }
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1150px) {
+  .container.home-page {
+    //padding: 60px 40px;
+    padding: 60px 180px 40px 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container.home-page .text-zone {
+    position: static;
+    transform: none;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 auto 40px;
+  }
+
+  .container.home-page h1 {
+    font-size: 40px;
+  }
+
+  .container.home-page h1 img {
+    width: 110px;
+  }
+
+  .container.home-page h2 {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;     
+    letter-spacing: 2px;    
+    white-space: normal;    
+  }
+}
